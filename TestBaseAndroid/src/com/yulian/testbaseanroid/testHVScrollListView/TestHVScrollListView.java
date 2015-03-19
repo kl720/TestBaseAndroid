@@ -16,7 +16,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-
+/**
+ * 测试自定义控件HVScrollListView
+ * @author Administrator
+ *
+ */
 @ContentView(R.layout.activity_test_hvscrolllistview)
 public class TestHVScrollListView extends Activity {
 	@ViewInject(R.id.hv_data1)
