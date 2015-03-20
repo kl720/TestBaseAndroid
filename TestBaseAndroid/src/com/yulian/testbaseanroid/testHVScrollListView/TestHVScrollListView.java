@@ -40,7 +40,12 @@ public class TestHVScrollListView extends Activity {
 		for(int i=0;i<40;i++){
 			Map<String, Object> map=new HashMap<String, Object>();
 			for(int j=0;j<arr_key.length;j++){
-				map.put(arr_key[j], "this is test content,"+i+"_"+j);
+				if(j%5==0){
+					map.put(arr_key[j], "xxxx");
+				}
+				else{
+					map.put(arr_key[j], "this is test content,"+i+"_"+j);
+				}
 			}
 			list.add(map);
 		}
