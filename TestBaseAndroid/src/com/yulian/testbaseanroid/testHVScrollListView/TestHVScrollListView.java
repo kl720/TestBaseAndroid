@@ -37,7 +37,7 @@ public class TestHVScrollListView extends Activity {
 		String[] arr_title=new String[]{"第0列","第1列","第2列","第3列","第4列","第5列","第6列","第7列","第8列","第9列"};
 		String[] arr_key=new String[]{"key1","key2","key3","key4","key5","key6","key7","key8","key9","key10"};
 		List<Map<String, Object>> list=new ArrayList<Map<String,Object>>();
-		for(int i=0;i<60;i++){
+		for(int i=0;i<40;i++){
 			Map<String, Object> map=new HashMap<String, Object>();
 			for(int j=0;j<arr_key.length;j++){
 				map.put(arr_key[j], "this is test content,"+i+"_"+j);
@@ -49,7 +49,7 @@ public class TestHVScrollListView extends Activity {
 		hv_data1.setKey(arr_key);
 		hv_data1.setData(list);
 		
-		hv_data1.init(this,false);
+		hv_data1.init(this,true);
 		
 		
 		
